@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="2">
+  <test name="Firefox">
+    <classes>
+      <class name="parallel.FireFoxTest"/>
+      
+       </classes>
+  </test> 
+  
+    <test name="Chrome">
+  <classes>
+   <class name="parallel.ChromeTest"/>
+  </classes>
+       </test> 
+           <test name="Edge">
+       
+        <classes>
+            <class name="parallel.Edge"/>
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
