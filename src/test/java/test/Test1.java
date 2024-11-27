@@ -20,6 +20,7 @@ public class Test1 {
 		 
 		WebElement share=driver.findElement(By.xpath("//button[@title='Share code' and @class='share-button']"));
 		System.out.println(share.getText());
+		System.out.println(driver.getTitle());
 		Assert.assertTrue(share.isEnabled()," Test failed");
 	}
 
