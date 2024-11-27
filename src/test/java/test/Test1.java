@@ -19,7 +19,8 @@ public class Test1 {
 		 driver=Util.launchBrowser("Chrome", "https://www.programiz.com/java-programming/online-compiler/");
 		 
 		WebElement share=driver.findElement(By.xpath("//button[@title='Share code' and @class='share-button']"));
-		System.out.println("text is : "+share.getText());
+		//System.out.println("text is : "+share.getText());
+		System.out.println(share.getText());
 		Assert.assertTrue(share.isEnabled()," Test failed");
 	}
 
